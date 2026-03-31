@@ -3,12 +3,10 @@ package com.chatbot.whatsapp_bot.controller;
 import com.chatbot.whatsapp_bot.model.MessageRequest;
 import com.chatbot.whatsapp_bot.service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/webhook")
 public class WebhookController {
 
